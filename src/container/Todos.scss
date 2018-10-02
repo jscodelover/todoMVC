@@ -1,0 +1,73 @@
+$fontSize : 25px;
+$width : 520px;
+
+.todoBox{
+    list-style: none;
+    border: 1px solid;
+    padding-left: 0;
+    margin: auto;
+    background-color: white;
+    width : $width;
+    li{
+        font-size : $fontSize;
+        border-bottom: 1px solid;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        p{
+            margin: 0;
+            width : $width;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            text-align: left;
+            span{
+                user-select: none;
+            }
+        }
+        &.displayTask{
+            padding-right : 15px;
+            color : #5f5c5c;
+            button{
+                background: none;
+                float: left;
+                right:0;   
+                border: none;
+                font-size: 20px;
+                color : rgb(182, 121, 121);
+            }
+        }
+        label{
+            padding: 15px;
+            cursor: pointer;
+            &:active{
+                color:#8a8888;
+            }
+        }
+        
+    }
+}
+
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.completetask{
+    text-decoration: line-through;
+    color : #a09b9b;
+}
+.completelabel{
+    color: green;
+}
+
+.inCompletetask{
+    text-decoration: initial;
+    color : #5f5c5c;
+}
+
+.inCompletelabel{
+    color : #d4d1d1;
+}

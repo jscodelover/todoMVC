@@ -1,0 +1,18 @@
+$fontSize : 25px;
+$width : 474px;
+
+.inputBox{
+    input[type="text" i]{
+        padding: 15px 0px;
+        font-size: $fontSize;
+        width : $width;
+        border: none;
+        &:focus{
+            outline: none;
+        }
+        user-select: none;
+    }
+    ::placeholder{
+        color : #d4d1d1; 
+    }
+}    
